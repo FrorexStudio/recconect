@@ -4,7 +4,7 @@ const UserSchema = new mongoose.Schema(
   {
     avatarUrl: {
       type: String,
-      default: "/default-avatar.png",
+      default: "http://localhost:3001/uploads/default-avatar.png",
     },
     email: {
       type: String,

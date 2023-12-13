@@ -22,6 +22,7 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());
+app.use("/uploads", express.static("uploads"));
 app.use('/auth', authRoutes);
 
 app.listen(PORT, (err) => {
